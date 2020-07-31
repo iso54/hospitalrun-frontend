@@ -1,5 +1,6 @@
 import { Spinner } from '@hospitalrun/components'
 import React, { Suspense } from 'react'
+import { ReactQueryDevtools } from 'react-query-devtools'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ const App: React.FC = () => (
         </Suspense>
       </BrowserRouter>
     </Provider>
+    <ReactQueryDevtools initialIsOpen={false} />
   </div>
 )
 
